@@ -1,43 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 * {
     box-sizing: border-box;
 }
-
 body{
     margin: 0px;
     padding: 0px;
+    font-family: 'Montserrat', sans-serif;
 }
-
 img {
-    max-width: 100%;
+    width: 600px;
+    height: 350px;
 }
-
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
+    padding: 10px;
 }
-
 ul {
     margin: 0px;
     padding: 0px;
 }
-
 a {
     text-decoration: none;
 }
-
-.header{
-    display: flex;
-    background-color: #267dd4;
-    color: white;
-    justify-content:space-evenly;
-    font-size: 25px;
-    word-spacing: 50px;
+li{
+    display: inline;
+    word-spacing: 25px;
 }
-
+li1{
+    word-spacing: 25px;
+}
+li::before{
+    content: "|";
+    color: white;
+}
+span{
+    color: blue;
+    font-size: 20px;
+}
+p1{
+    white-space: nowrap;
+    font-size: 15px;
+}
+.header{
+    background-color: dodgerblue;
+    text-align: center;
+    font-size: 20px;
+    height: 30px;
+}
+.header a{
+    color: white;
+}
 .about_section{
     display: flex;
     flex-wrap: wrap;
 }
-
 .about_section .left_profile{
     flex: 0 0 250px;
     width: 250px;
@@ -45,66 +61,75 @@ a {
     justify-content: space-evenly;
     text-align: center;
 }
-
 .about_section .right_profile{
     flex: 0 0 calc(100% - 250px);
     width: calc(100% - 250px);
 }
-
+.about_text {
+    flex: 50%;
+    width: 50%;
+}
+.about_text_content1{
+    background-color: whitesmoke;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.about_text_content2{
+    background-color: whitesmoke;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.about_image {
+    flex: 50%;
+    width: 50%;
+}
+.rating_stars{
+    color: #FFD700;
+    padding: 10px;
+}
 .footer{
-    display: flex;
     background-color:rgb(51, 59, 66);
     color: white;
-    justify-content: space-evenly;
     text-align: center;
 }
-
 .button {
-    background-color: blue;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+  background-color: blue;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
 }
-
+.button a {
+    color: white;
+}
 .image_profile img{
     width: 150px;
     height: auto;
     border-radius: 100%;
     padding: 20px;
 }
-
 .logo_image img{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 100%;
-    padding: 10px;
 }
-
 .details{
     justify-content: space-evenly;
     word-spacing: 30px;
     font-family: fangsong;
 }
-
 .about_details{
-    padding: 20px;background-color: burlywood;
+    padding: 20px;
+    background-color: burlywood;
+    display: flex;
 }
-
 .about_us{
     font-size: 20px;
     font-family: cursive;
 }
-
 .copyright{
     font-family: monospace;
-}
-
-.about_text {
-    background-image: url(../images/1.jpg);
 }
 .about_text h3{
     color:darkblue;
@@ -112,4 +137,7 @@ a {
 
 .about_text p{
     color:darkslateblue;
+}
+.footer_links a{
+    color: white;
 }
